@@ -37,5 +37,5 @@ def text_node_to_html_node(text_node):
     if TextType.LINK == text_node.text_type:
         return LeafNode("a",text_node.text,{"href":text_node.url})
     if TextType.IMAGE == text_node.text_type:
-        return LeafNode("img",None,{"src":text_node.url})
+        return LeafNode("img","",{"src":text_node.url, "alt": text_node.text})
     return ValueError(f"Invalid text node text type: {text_node.text_type}")
