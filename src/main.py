@@ -7,10 +7,6 @@ def main():
     "href": "https://www.google.com", 
     "target": "_blank",
     })
-    
-    test_parentnode = ParentNode("div",[test_textnode,test_htmlnode])
-    print(test_parentnode.to_html())
-    print(test_parentnode)
 
 if __name__ == "__main__":
     main()
